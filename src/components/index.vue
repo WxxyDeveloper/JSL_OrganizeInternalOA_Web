@@ -1,5 +1,5 @@
 <template>
-  <div class=" w-full h-auto">
+  <div class=" w-full h-auto bg-sky-200">
     <nav class="w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div class="container w-full flex flex-wrap items-center justify-between mx-auto p-4">
         <div>
@@ -15,13 +15,13 @@
               <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">主页</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">关于</a>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">关于我们</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">服务</a>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">服务内容</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">联系</a>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">联系我们</a>
             </li>
           </ul>
         </div>
@@ -114,7 +114,6 @@
 
     <div class="container mx-auto mt-40">
       <h2 class="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">项目展示</h2>
-
       <div class="flex flex-col space-y-10">
         <div class="flex space-x-12">
           <div class=" w-2/3 h-96 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -126,7 +125,7 @@
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">项目1</h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">简要叙述</p>
-              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-sky-200 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 了解更多
                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -143,7 +142,7 @@
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">项目2</h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">简要叙述</p>
-              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-sky-200 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 了解更多
                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -162,7 +161,7 @@
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">项目3</h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">简要叙述</p>
-              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-sky-200 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 了解更多
                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -179,7 +178,7 @@
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">项目4</h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">简要叙述</p>
-              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-sky-200 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 了解更多
                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -190,6 +189,59 @@
         </div>
       </div>
     </div>
+
+
+    <div class="container mt-40 mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">新闻与活动</h2>
+      <div class="flex space-x-8">
+        <div class="w-1/3 h-96 border-gray-400 bg-white">
+          <a href="">
+            <img src="" alt="" class="w-full h-60 border border-gray-400">
+            <div class="ml-4">
+              <h3 class="text-lg font-bold mt-10">新闻标题1</h3>
+              <h4 class="mt-2 mb-4">时间</h4>
+              <p class="ml-2">新闻简要内容</p>
+            </div>
+          </a>
+        </div>
+        <div class=" w-1/3 h-96 border-gray-400 bg-white">
+          <a href="">
+            <img src="" alt="" class="w-full h-60 border border-gray-400">
+            <div class="ml-4">
+              <h3 class="text-lg font-bold mt-10">新闻标题1</h3>
+              <h4 class="mt-2 mb-4">时间</h4>
+              <p class="ml-2">新闻简要内容</p>
+            </div>
+          </a>
+        </div>
+        <div class="flex flex-col space-y-2 w-1/3 h-96 border-gray-400 bg-gray-100">
+          <a href="" class="mt-4 ml-2 w-full h-20 hover:text-red-700">
+            <h3 class="text-lg font-bold">新闻1</h3>
+            <p>时间</p>
+          </a>
+          <a href="" class="ml-2 w-full h-20 hover:text-red-700">
+            <h3 class="text-lg font-bold">新闻2</h3>
+            <p>时间</p>
+          </a>
+          <a href="" class="ml-2 w-full h-20 hover:text-red-700">
+            <h3 class="text-lg font-bold">新闻3</h3>
+            <p>时间</p>
+          </a>
+          <a href="" class="ml-2 w-full h-20 hover:text-red-700">
+            <h3 class="text-lg font-bold">新闻4</h3>
+            <p>时间</p>
+          </a>
+          <a href="" class="ml-2 w-full h-20 hover:text-red-700">
+            <h3 class="text-lg font-bold">新闻5</h3>
+            <p>时间</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+
     <div class="mt-40 flex items-center justify-center">
       <div class="text-center">
         ICP备案
