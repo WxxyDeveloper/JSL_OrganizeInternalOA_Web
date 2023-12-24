@@ -12,7 +12,7 @@
                 </svg>
                 用户名
               </label>
-              <input type="email" id="email" class="mt-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required>
+              <input type="email" id="email" v-model="data.userNum" class="mt-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required>
             </div>
             <div class="mb-5">
               <label for="password" class="flex items-center space-x-4  mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -21,7 +21,7 @@
                 </svg>
                 密码
               </label>
-              <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+              <input type="password" v-model="data.password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
             </div>
             <div class="flex items-start mb-5">
               <div class="flex items-center h-5">
@@ -30,7 +30,7 @@
               <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">记住我</label>
             </div>
             <div class="flex flex-col ">
-              <a href="/success" class="text-white bg-sky-500 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 sm:w-auto mt-2 mb-3 mx-8 px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">登录</a>
+              <a @click="loginUser" class="text-white bg-sky-500 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 sm:w-auto mt-2 mb-3 mx-8 px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">登录</a>
               <div class="flex space-x-2 ml-24">
                 <a href="" class="text-blue-500  font-medium rounded-lg text-sm  sm:w-auto text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">忘记密码? |</a>
                 <a href="/register" class="text-blue-500  font-medium rounded-lg text-sm  sm:w-auto  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">注册 |</a>
@@ -53,5 +53,28 @@
 </div>
 </template>
 <script setup>
+import axios from 'axios';
+
+const data = {
+  userNum: '',
+  password: ''
+}
+
+function loginUser(){
+    axios({
+    url: "api/user/login",
+    method: "post",
+    data: {
+      "userNum": data.userNum,
+      "password": data.password
+    },
+    Headers: {
+      'content-type': 'application/json;charset=utf-8',
+      'Timestamp':''
+    },
+  }).then((res) => {
+    console.log(res);
+  });
+}
 
 </script>
