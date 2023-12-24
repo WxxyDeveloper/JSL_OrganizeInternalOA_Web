@@ -12,7 +12,7 @@
                 </svg>
                 真实姓名
               </label>
-              <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required>
+              <input type="text" v-model="data.username" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required>
             </div>
             <div class="mb-5">
               <label for="password" class="flex items-center space-x-4 mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -21,7 +21,7 @@
                 </svg>
                 密码
               </label>
-              <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+              <input type="password" v-model="data.password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
             </div>
             <div class="mb-5">
               <label for="sex" class="flex items-center space-x-4 mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -30,7 +30,7 @@
                 </svg>
                 性别
               </label>
-              <input type="text" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+              <input type="text" v-model="data.sex" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
             </div>
             <div class="mb-5">
               <label for="datebirth" class="flex items-center space-x-4 mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -39,7 +39,7 @@
                 </svg>
                 出生日期
               </label>
-              <input type="date" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+              <input type="date" v-model="data.age" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
             </div>
             <div class="mb-5">
               <label for="work" class="flex items-center space-x-4 mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -51,7 +51,7 @@
                 </svg>
                 单位
               </label>
-              <input type="text" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+              <input type="text" v-model="data.unit" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
             </div>
             <div class="mb-5">
               <label for="speciality" class="flex items-center space-x-4 mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -60,7 +60,7 @@
                 </svg>
                 所学专业
               </label>
-              <input type="text" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+              <input type="text" v-model="data.filed" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
             </div>
             <div class="mb-5">
               <label for="home" class="flex items-center space-x-4 mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -69,9 +69,9 @@
                 </svg>
                 家乡
               </label>
-              <input type="text" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+              <input type="text" v-model="data.hometown" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
             </div>
-            <a href="" class="text-white bg-sky-500 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 sm:w-auto mb-1 mx-8 px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">立即注册</a>
+            <a @click="registerUser" class="text-white bg-sky-500 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 sm:w-auto mb-1 mx-8 px-10 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">立即注册</a>
           </form>
         </div>
       </div>
@@ -87,5 +87,44 @@
     </div>
   </div>
 </template>
+
+
+
+
 <script setup>
+import axios from 'axios';
+import getCurrentTimestamp from '../public/methods.js';
+
+const data = {
+  username: '',
+  password: '',
+  sex: '',
+  age: '',
+  unit: '',
+  filed: '',
+  hometown:''
+}
+
+function registerUser() {
+  axios({
+    url: 'api/user/register',
+    method: 'post',
+    data: data,
+    headers: {
+      'content-type': 'application/json;charset=utf-8',
+      'Timestamp':getCurrentTimestamp()
+    }
+  }).then((res) => {
+    if (res.data.code === 200) {
+      //注册成功，提示+跳转页面
+    } else {
+      //注册失败，消息提示
+    }
+    console.log(res)
+  })
+}
+
+
+
+
 </script>

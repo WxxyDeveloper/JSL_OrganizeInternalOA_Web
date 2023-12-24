@@ -54,6 +54,7 @@
 </template>
 <script setup>
 import axios from 'axios';
+import getCurrentTimestamp from '../public/methods.js';
 
 const data = {
   userNum: '',
@@ -68,12 +69,17 @@ function loginUser(){
       "userNum": data.userNum,
       "password": data.password
     },
-    Headers: {
+    headers: {
       'content-type': 'application/json;charset=utf-8',
-      'Timestamp':''
+      'Timestamp':getCurrentTimestamp()
     },
-  }).then((res) => {
-    console.log(res);
+    }).then((res) => {
+      if (res.data.code === 200) {
+        //登录成功，跳转页面+消息提示+存储登录用户的数据
+      } else {
+      //登录失败，消息提示
+    }   
+    
   });
 }
 
