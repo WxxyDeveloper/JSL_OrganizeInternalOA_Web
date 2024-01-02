@@ -78,7 +78,8 @@ function loginUser(){
     }).then((res) => {
       if (res.data.code === 200) {
         //登录成功，跳转页面+消息提示+存储登录用户的数据
-        router.push("/success")
+        router.push("/")
+        alert("登录成功")
       } else {
       //登录失败，消息提示
         alert("用户名或密码错误！")
