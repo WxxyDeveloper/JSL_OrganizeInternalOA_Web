@@ -55,11 +55,13 @@
 <script setup>
 import axios from 'axios';
 import getCurrentTimestamp from '../public/methods.js';
+import {useRouter} from "vue-router";
 
 const data = {
   userNum: '',
   password: ''
 }
+const router = useRouter()
 
 function loginUser(){
     axios({
@@ -76,11 +78,14 @@ function loginUser(){
     }).then((res) => {
       if (res.data.code === 200) {
         //登录成功，跳转页面+消息提示+存储登录用户的数据
+        router.push("/success")
       } else {
       //登录失败，消息提示
-    }   
+        alert("用户名或密码错误！")
+    }
     
   });
+
 }
 
 </script>
